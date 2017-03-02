@@ -26,7 +26,7 @@ export default class Form extends React.Component{
       this.queue = [];
       this.save(text);
     } else {
-      setTimeout(()=>{ this.loop()}, 500)
+      setTimeout(()=>{ this.loop()}, 5)
     }
   }
 
@@ -37,7 +37,7 @@ export default class Form extends React.Component{
     request.onreadystatechange = ()=>{
       if(request.readyState === 4){
 		this.props.store.loaded();
-        setTimeout(()=>{ this.loop()}, 500)
+        setTimeout(()=>{ this.loop()}, 5)
       }
     }
 	request.send(JSON.stringify({text: text}));
