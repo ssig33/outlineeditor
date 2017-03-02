@@ -1,0 +1,33 @@
+:local .textarea{
+	width:100%;
+	height: 95%;
+	min-height: 480px;
+}
+
+@media screen and (min-width: 59.6875em){ 
+	:local .all{
+	  margin-left:auto;
+	  margin-right:auto;
+	  text-align:left;
+	  height:100%;
+	}
+
+	html, body, #content{
+	  height: 100%;
+	}
+
+	:local .full_height{
+	  height: 100%;
+	}
+
+	
+
+	:local .left{
+	  width:50%;
+	  float:left;
+	}
+
+	:local .left_pad{
+	  padding-left: 20px;
+	}
+}
